@@ -1,4 +1,7 @@
 import os
+
+# 本地化
+
 import argostranslate.package as pkg
 
 print("========== 更新可用的包索引 ==========")
