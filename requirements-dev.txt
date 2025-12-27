@@ -10,3 +10,6 @@ paddleocr>=3.3.2
 stanza>=1.10.1
 argostranslate>=1.10.0
 
+# Test
+pytest
+

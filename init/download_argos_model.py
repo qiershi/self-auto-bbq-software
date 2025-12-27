@@ -34,8 +34,11 @@ def install_package(from_code, to_code):
         if not required_package:
             raise Exception(f"未找到或安装从 {from_code} 到 {to_code} 的语言包")
 
-
-install_package("en", "zh")
-install_package("ja", "en")
-install_package("zh", "en")
+def ensure_argos_models():
+    print("downloading: translate_en-zh")
+    install_package("en", "zh")
+    print("downloading: translate_ja-en")
+    install_package("ja", "en")
+    print("downloading: translate_zh-en")
+    install_package("zh", "en")
 

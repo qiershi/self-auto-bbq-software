@@ -66,10 +66,8 @@ def ensure_model(model_key: str, base_dir="./models/ocr/paddle-ocr"):
 
     return model_dir
 
-def ensure_all_models():
+def ensure_paddle_models():
     for key in PADDLE_OCR_MODELS:
         ensure_model(key)
 
-if __name__ == "__main__":
-    ensure_all_models()
 
