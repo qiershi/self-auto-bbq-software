@@ -1,0 +1,15 @@
+# Image
+pillow>=12.0.0
+pywin32; sys_platform == "win32"
+
+# OCR
+paddlepaddle>=3.2.2
+paddleocr>=3.3.2
+
+# Translate
+stanza>=1.10.1
+argostranslate>=1.10.0
+
+# Test
+pytest
+

@@ -1,0 +1,33 @@
+import os 
+import sys
+import argostranslate.translate as tr
+import argostranslate.package as pkg
+
+text = sys.argv[1]
+from_code = "en"
+to_code = "zh"
+
+installed_packages = pkg.get_installed_packages()
+print("全部语言包: ")
+print(installed_packages)
+
+"""
+try:
+    translator = None
+    for p in installed_packages:
+        if p.from_code == from_code and p.to_code == to_code:
+            print("尝试获取翻译器: ")
+            translator = tr.get_translation_from_codes(from_code, to_code)
+            break
+except Exception:
+    raise Exception("获取翻译器失败") 
+
+print("开始翻译: ")
+translated_text = translator.translate(text)
+"""
+
+translated_text = tr.translate(text, from_code, to_code)
+
+print(f"原文 ({from_code}): {text}")
+print(f"译文 ({to_code}): {translated_text}")
+
