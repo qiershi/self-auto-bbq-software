@@ -25,7 +25,6 @@ class OCREngine:
         self.ocr = PaddleOCR(
                 lang=lang,                      # 语言模型
                 device=device,                  # 设备指定
-                ocr_version="PP-OCRv5"          # 模型版本
                 use_textline_orientation=True,  # 是否文本行方向分类模型
                 text_detection_model_dir=PADDLE_OCR_MODELS_DIR + "PP-OCRv5_server_det_infer",
                 text_recognition_model_dir=PADDLE_OCR_MODELS_DIR + "PP-OCRv5_server_rec_infer"

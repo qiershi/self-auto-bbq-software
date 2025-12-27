@@ -7,7 +7,7 @@ from multi_system.dummy import DummyWindowCapture
 from core.ocr.ocr_engine import OCREngine
 # [3] 翻译
 os.environ["STANZA_RESOURCES_DIR"] = "./models/translate/stanza_models"
-os.environ["ARGOS_PACKAGES_DIR"] = "./models/translate/argos_translatei/packages"
+os.environ["ARGOS_PACKAGES_DIR"] = "./models/translate/argos_translate/packages"
 from argostranslate import translate, package
 
 # 性能监测
